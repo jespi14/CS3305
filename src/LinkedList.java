@@ -2,8 +2,13 @@
 This class define a linked list that stores integer values.
 */
 
+import org.w3c.dom.Node;
+
+import java.util.Scanner;
+
 public class LinkedList
 {
+
    public Node head, tail;
 
    //constructor method to create a list of object with head, tail, and size. 
@@ -30,10 +35,17 @@ public class LinkedList
    //method #1: add first node
    public void addFirstNode(int data)
    {
+
+
       if(tail==null)
-         head=tail=new Node(data)// if the list is empty
+         head=tail=new Node(data); // if the list is empty
       else {
-         head.next
+         Node newNode= new Node(data);
+
+         newNode.next=head;
+         head=newNode;
+
+
 
 
       }

@@ -10,7 +10,7 @@ public class myTest
    
       for (int i=1; i <= 5; i++) //add 5 nodes to the list
       {
-         myList.addLastNode(i*10);
+         myList.addFirstNode(i*10);
       } 
       
       //print out the list content
